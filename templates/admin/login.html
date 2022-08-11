@@ -26,11 +26,38 @@
           <div class="card">
             <div class="card-header">Inicio de seccion</div>
             <div class="card-body">
-              <h4 class="card-title">usuario</h4>
-              <p class="card-text">contraseña</p>
+              <form action="/admin/login" method="post">
+
+              <div class="mb-3">
+                <label for="" class="form-label">Usuario</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="txtUsuario"
+                  id="txtUsuario"
+                  aria-describedby="helpId"
+                  placeholder="Escriba su Usuario"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="txtPassword" class="form-label"
+                  >Contraseña:<a href=""></a
+                ></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="txtPassword"
+                  id="txtPassword"
+                  aria-describedby="helpId"
+                  placeholder="Escriba su contraseña"
+                />
+              </div>
+              <button type="submit" class="btn btn-success">Entrar</button>
             </div>
             <div class="card-footer text-muted">loguiate con alto guiso</div>
           </div>
+        </form>
         </div>
         <div class="col-md-4"></div>
       </div>
