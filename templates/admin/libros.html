@@ -1,1 +1,54 @@
-{% include 'admin/cabecera.html' %} {% include 'admin/pie.html' %}
+{% include 'admin/cabecera.html' %}
+<br />
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <div class="card">
+        <div class="card-header">Datos del libro</div>
+        <div class="card-body">
+          <form action="" method="post">
+            <div class="mb-3">
+              <label for="texNombre" class="form-label">Nombre:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="texNombre"
+                id="texNombre"
+                aria-describedby="helpId"
+                placeholder="Nombre del libro"
+              />
+              <div class="mb-3">
+                <label for="txtImagen" class="form-label">Imagen</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="txtImagen"
+                  id="txtImagen"
+                  aria-describedby="helpId"
+                  placeholder="Seleccion de la imagen"
+                />
+                <div class="mb-3">
+                  <label for="txtURL" class="form-label">Descarga</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="txtURL"
+                    id="txtURL"
+                    aria-describedby="helpId"
+                    placeholder="Escriba la URL"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer text-muted">
+          <button type="submit" class="btn btn-danger">Agregar</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7"></div>
+  </div>
+</div>
+
+{% include 'admin/pie.html' %}
